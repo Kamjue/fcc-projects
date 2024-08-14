@@ -1,0 +1,22 @@
+body {
+    background-color: lightcyan;
+}
+
+#root {
+    background-color: white;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex: auto;
+}
+
+#editor {
+    min-width: 49%;
+}
+
+#preview {
+    min-width: 49%;
+    border: solid;
+}

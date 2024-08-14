@@ -1,0 +1,41 @@
+html, body{
+	min-height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: lightblue;
+	font-family: sans-serif;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+svg {
+	background-color: whitesmoke;
+	border-radius: 10px;
+}
+
+#canvas {
+	min-width: 1000px;
+	min-height: 600px;
+}
+
+.county:hover {
+	fill: blue;
+}
+
+#tooltip {
+	visibility: hidden;
+	height: auto;
+	width: auto;
+}
+
+#legend {
+	padding: 50px 0;
+}

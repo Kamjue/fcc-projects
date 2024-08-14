@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">Survey</h1>
+    <p id="description">Description</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+            <input id="name" type="text" placeholder="Enter your name"><br>
+        <label for="email" id="email-label">Email</label><br>
+            <input id="email" type="email" placeholder="Enter your email"><br>
+        <label for="number" id="number-label">Number</label><br>
+            <input id="number" type="number" min=0 max=999999 placeholder="Enter a number"><br>
+        <p id="dropdown-info">Fruit</p>
+            <select id="dropdown">
+                <option value="potato">Potato</option>
+                <option value="tomato">Tomato</option>
+            </select>
+        <br>
+        <p id="radio-select">Select an option</p>
+        <input type="radio" name="radio-group" value="one">Option 1</input><br>
+        <input type="radio" name="radio-group" value="two">Option 2</input><br>
+        <input type="radio" name="radio-group" value="three">Option 3</input><br>
+        <br>
+        <p id="check-select">Select multiple options</p>
+        <input type="checkbox" name="check-group" value="one">Selection 1</input><br>
+        <input type="checkbox" name="check-group" value="two">Selection 2</input><br>
+        <input type="checkbox" name="check-group" value="three">Selection 3</input><br>
+
+        <textarea rows="5" cols="50" placeholder="Write something here"></textarea>
+        <br>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Treemap Diagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="title">Top Selling Video Games</h2>
+    <p id="description">The Top 100 Video Games acording to sales.</p>
+    <div id="tooltip"></div>
+    
+    <div id="wrapper">
+        <svg id="canvas">
+        </svg>
+    
+        <svg id="legend">
+        <g>
+            <rect class="legend-item" fill="lightblue"></rect>
+            <rect class="legend-item" fill="pink"></rect>
+        </g>
+        </svg>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

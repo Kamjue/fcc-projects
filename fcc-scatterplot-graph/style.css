@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+  }
+  
+  svg {
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  
+  .dot:hover {
+    fill: lightgray;
+  }
+  
+  #tooltip {
+    visibility: hidden;
+    width: auto;
+    height: auto;
+  }

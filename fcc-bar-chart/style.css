@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 98vh;
+    font-family: sans-serif;
+  }
+  
+  svg {
+    background-color: wheat;
+    border-radius: 10px;
+  }
+  
+  .bar {
+    fill: #2B7A78;
+  }
+  
+  .bar:hover {
+    fill: #17252A;
+  }
+  
+  #title {
+    font-weight: bold;
+    font-size: 26px;
+  }
+  
+  #tooltip {
+    padding: 10px;
+    background-color: wheat;
+    border-radius: 0 0 10px 10px;
+  }

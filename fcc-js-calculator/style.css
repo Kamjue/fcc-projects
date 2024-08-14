@@ -1,0 +1,49 @@
+#title {
+    padding: 20px 0;
+  }
+  
+  #calc {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #display {
+    width: 190px;
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #buttons {
+    width: 190px;
+    display: grid;
+    grid-template-columns: repeat(4, 45px);
+    gap: 2px;
+    grid-auto-rows: minmax(50px, auto);
+    color: white;
+  }
+  
+  #clear {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  #zero {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
+  
+  #decimal {
+    grid-row: 5;
+  }
+  
+  #equals {
+    grid-column: 4;
+    grid-row: 4 / span 2;
+  }

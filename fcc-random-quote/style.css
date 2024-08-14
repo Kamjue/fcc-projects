@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: lightblue;
+	font-family: sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#root {
+	min-width: 50%;
+}
+
+#quote-box {
+	background-color: white;
+	max-width: 100%;
+	border-radius: 10px;
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#text {
+	text-align: center;
+}
+
+#author {
+	text-align: right;
+}
+
+#buttons {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	justify-content: space-around;
+}
+
+.qbox-appear {
+	opacity: 0.01;
+}
+
+.qbox-appear-active {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.qbox-enter {
+	opacity: 0.01;
+}
+
+.qbox-enter-active {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.qbox-exit {
+	opacity: 1;
+}
+
+.qbox-exit-active {
+	opacity: 0.01;
+	transition: opacity 300ms ease-in;
+}
+
+@keyframe toggleIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade {
+	animation: 1s toggleIn;
+}

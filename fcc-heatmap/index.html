@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Heat Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+    <h4 id="description">Temperatures from 1753 to 2015.</h4>
+    <div id="tooltip"></div>
+    
+    <svg id="canvas">
+    </svg>
+    <svg id="legend">
+        <g>
+        <rect x="10" y="0" width="40" height="40" fill="SteelBlue"/>
+        <text x="60" y="20">Variance of -1 or less</text>
+        </g>
+        <g>
+        <rect x="10" y="40" width="40" height="40" fill="LightSteelBlue"/>
+        <text x="60" y="60">On or Below Average</text>
+        </g>
+        <g>
+        <rect x="10" y="80" width="40" height="40" fill="Orange"/>
+        <text x="60" y="100">Above Average</text>
+        </g>
+        <g>
+        <rect x="10" y="120" width="40" height="40" fill="Crimson"/>
+        <text x="60" y="140">Variance of +1 or more</text>
+        </g>
+    </svg>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
